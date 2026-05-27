@@ -399,16 +399,7 @@ La aplicación incluye una interfaz web en `/articulos` con diseño estilo Merca
 | `/articulos/editar/{id}` | Formulario para editar un artículo existente |
 
 ---
-
-## Decisiones de diseño
-
-Ver [`MEJORAS.md`](MEJORAS.md) para el razonamiento detrás de cada decisión técnica tomada en el proyecto (DTOs, JWT stateless, BCrypt, separación de `UserDetailsService`, etc.).
-
-Ver [`TESTS.md`](TESTS.md) para la documentación completa de la estrategia de testing.
-
----
-
 ## Autor
 
 **Christian Bordon**  
-[GitHub](https://github.com/tu-usuario) · [LinkedIn](https://linkedin.com/in/tu-perfil)
+[GitHub](https://github.com/christianh-b/) · [LinkedIn](https://www.linkedin.com/in/christianh-bordon/)

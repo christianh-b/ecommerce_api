@@ -24,7 +24,4 @@ out/
 *.log
 logs/
 
-HELP.md
-MEJORAS.md
-TESTS.md
-.claude
+
