@@ -5,7 +5,7 @@ API RESTful para gestión de productos de e-commerce construida con Spring Boot 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.0-brightgreen?logo=springboot)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-JWT-blue?logo=springsecurity)
-![MySQL](https://img.shields.io/badge/MySQL-8-blue?logo=mysql)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-blue?logo=postgresql)
 ![JUnit](https://img.shields.io/badge/Tests-46%20tests-success?logo=junit5)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
@@ -34,7 +34,7 @@ API RESTful para gestión de productos de e-commerce construida con Spring Boot 
 | Framework | Spring Boot 4.0.0 |
 | Seguridad | Spring Security + JJWT 0.12.6 |
 | Persistencia | Spring Data JPA + Hibernate |
-| Base de datos | MySQL 8 |
+| Base de datos | PostgreSQL 14+ |
 | Validación | Jakarta Bean Validation |
 | Vistas | Thymeleaf + Tailwind CSS |
 | Documentación | SpringDoc OpenAPI 3 (Swagger UI) |
@@ -141,7 +141,7 @@ src/
 
 - Java 17+
 - Maven 3.8+
-- MySQL 8+
+- PostgreSQL 14+
 
 ---
 
@@ -150,14 +150,14 @@ src/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/ecommerce-api.git
+git clone https://github.com/christianh-b/ecommerce-api.git
 cd ecommerce-api
 ```
 
 ### 2. Crear la base de datos
 
 ```sql
-CREATE DATABASE articulos_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE articulos_db;
 ```
 
 ### 3. Configurar variables de entorno
@@ -166,7 +166,7 @@ Las credenciales se leen de variables de entorno con valores por defecto para de
 
 | Variable | Descripción | Ejemplo |
 |----------|-------------|---------|
-| `DB_URL` | URL JDBC de la base de datos | `jdbc:mysql://host:3306/articulos_db` |
+| `DB_URL` | URL JDBC de la base de datos | `jdbc:postgresql://host:5432/articulos_db` |
 | `DB_USERNAME` | Usuario de MySQL | `app_user` |
 | `DB_PASSWORD` | Contraseña de MySQL | `contraseña_segura` |
 | `JWT_SECRET` | Clave Base64 para firmar tokens HS256 (mín. 32 bytes) | `<base64>` |
