@@ -2,6 +2,9 @@
 
 API RESTful para gestión de productos de e-commerce construida con Spring Boot 4, autenticación JWT y arquitectura en capas. Incluye suite completa de tests con Mockito + JUnit 5.
 
+[![API en vivo](https://img.shields.io/badge/API-en%20vivo-brightgreen?logo=render)](https://ecommerce-api-i8r7.onrender.com/api/articulos)
+[![Swagger UI](https://img.shields.io/badge/Swagger-UI-85EA2D?logo=swagger)](https://ecommerce-api-i8r7.onrender.com/swagger-ui.html)
+
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.0-brightgreen?logo=springboot)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-JWT-blue?logo=springsecurity)
@@ -181,9 +184,13 @@ Para desarrollo local no hace falta definir ninguna — el archivo `application.
 mvn spring-boot:run
 ```
 
-La API estará disponible en `http://localhost:8080`.
+La API estará disponible en `http://localhost:8081`.
 
-La documentación interactiva Swagger UI estará en `http://localhost:8080/swagger-ui.html`.
+La documentación interactiva Swagger UI estará en `http://localhost:8081/swagger-ui.html`.
+
+**Producción (Render):**
+- API: `https://ecommerce-api-i8r7.onrender.com/api/articulos`
+- Swagger UI: `https://ecommerce-api-i8r7.onrender.com/swagger-ui.html`
 
 > Al arrancar con la base de datos vacía, `DataInitializer` inserta automáticamente 6 productos de demostración con sus imágenes. Si la tabla ya tiene datos, la carga se omite.
 
